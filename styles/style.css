@@ -1,0 +1,488 @@
+@import 'font.css';
+
+
+/* ROOT START */
+:root{
+--f900: 'Raleway-Black';
+--f700: 'Raleway-Bold';
+--f300: 'Raleway-Light';
+--f400: 'Raleway-Regular';
+--f100: 'Raleway-Thin';
+--green: #69cf17;
+--green_75:rgba(79, 159, 13, 0.75);
+--green_90:rgba(96, 187, 21, 0.90);
+--logo_out:#62be19;
+--logo_in:#4e9f0d;
+--number:#4e9f0d;
+--logo_shadow:#1e1e1e;
+--dark: #060002;
+--white: #ffffff;
+--gray_menu: #7a7a7a;
+--gray_txt: #dedede;
+--col-1: calc(100% / 12);
+--col-2: calc(100% / 12 * 2);
+--col-3: calc(100% / 12 * 3);
+--col-4: calc(100% / 12 * 4);
+--col-5: calc(100% / 12 * 5);
+--col-6: calc(100% / 12 * 6);
+--col-7: calc(100% / 12 * 7);
+--col-8: calc(100% / 12 * 8);
+--col-9: calc(100% / 12 * 9);
+--col-10: calc(100% / 12 * 10);
+--col-11: calc(100% / 12 * 11);
+--col-12: calc(100% / 12 * 12);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.col-1{
+    width: var(--col-1);
+    padding: 0 15px;
+}
+.col-2{
+    width: var(--col-2);
+    padding: 0 15px;
+}
+.col-3{
+    width: var(--col-3);
+    padding: 0 15px;
+}
+.col-4{
+    width: var(--col-4);
+    padding: 0 15px;
+}
+.col-5{
+    width: var(--col-5);
+    padding: 0 15px;
+}
+.col-6{
+    width: var(--col-6);
+    padding: 0 15px;
+}
+.col-7{
+    width: var(--col-7);
+    padding: 0 15px;
+}
+.col-8{
+    width: var(--col-8);
+    padding: 0 15px;
+}
+.col-9{
+    width: var(--col-9);
+    padding: 0 15px;
+}
+.col-10{
+    width: var(--col-10);
+    padding: 0 15px;
+}
+.col-11{
+    width: var(--col-11);
+    padding: 0 15px;
+}
+.col-12{
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+body{
+    font-family: var(--f400);
+    background: var(--dark);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.mh-100-vh{
+    min-height: 100vh;
+}
+
+.logo{
+    color: var(--white);
+    font-family: var(--f700);
+    font-size: 24px;
+    text-transform: uppercase;
+    background: var(--logo_in);
+    border: 3px solid var(--logo_out);
+    border-radius: 5px;
+    line-height: 17px;
+    padding: 8px 19px;
+    box-shadow: 5px 5px 5px 0 #47900c inset;
+}
+
+.price__btn{
+    color: var(--white);
+    background: var(--green_75);
+    width: max-content;
+}
+
+/* Variable - o'zgaruvchi */
+
+/* ROOT END */
+/* *********************** */
+/* HEADER START */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    background: url(../images/header\ bg.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+}
+
+.nav__link{
+    display: block;
+    color: var(--green);
+    font-family: var(--f300);
+    line-height: 14px;
+    font-size: 20px;
+    padding: 38px 36px;
+    transition: color 0.5s, background 0.5s;
+}
+
+.nav__link:hover{
+    color: var(--white);
+    background: var(--green_75);
+}
+
+.header__title{
+    font-size: 72px;
+    color: var(--green);
+    font-family: var(--f900);
+    text-transform: uppercase;
+    line-height: 51px;
+    margin-bottom: 14px;
+}
+
+.header__beef{
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 25px;
+    margin-bottom: 36px;
+}
+
+.header__txt{
+    color: var(--gray_txt);
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 75px;
+}
+
+.header-info__btn{
+    line-height: 45px;
+    font-family: var(--f100);
+    font-size: 60px;
+    padding: 27px 91px 28px 90px;
+    transition: color 0.5s;
+}
+
+.header-info__btn:hover{
+    color: var(--dark);
+}
+
+
+/* HEADER END */
+/* ********************* */
+/* MAIN START */
+
+.main__menu{
+    background: var(--dark);
+    padding: 48px 0 68px;
+}
+
+.menu__link{
+    display: block;
+    color: var(--gray_menu);
+    font-size: 24px;
+    font-family: var(--f700);
+    margin-right: 52px;
+    line-height: 22px;
+    transition: color 0.5s;
+}
+
+.menu__link:hover{
+    color: var(--green);
+}
+
+.product__box{
+    position: relative;
+}
+
+.product__price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 24px;
+    color: var(--gray_txt);
+    line-height: 19px;
+    padding: 21px 57px;
+}
+
+.add-cart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--green_90);
+    color: var(--white);
+    line-height: 18px;
+    font-size: 24px;
+    font-family: var(--f700);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product__box:hover .add-cart{
+    opacity: 1;
+}
+
+.product__box:hover .product__price{
+    opacity: 0;
+}
+
+.product__img{
+    object-fit: cover;
+}
+
+.product__title{
+    font-size: 24px;
+    margin: 37px 0 18px;
+    line-height: 17px;
+    color: var(--green);
+    font-family: var(--f900);
+}
+
+.product__txt{
+    color: var(--gray_txt);
+    line-height: 24px;
+    margin-bottom: 52px;
+}
+
+.main__recipe{
+    background: url(../images/last\ picture.jpg) no-repeat center /cover;
+    padding: 51px  0 173px;
+}
+
+.recipe__title{
+    text-align: center;
+    color: var(--green);
+    font-family: var(--f900);
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.recipe__title:after{
+    content: '';
+    display: block;
+    margin:23px auto 50px;
+    max-width: 200px;
+    height: 1px;
+    background: var(--green);
+}
+
+.recipe__txt{
+    color: var(--white);
+    font-family: var(--f400);
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.recipe__txt:first-of-type{
+    margin-bottom: 30px;
+}
+
+.branches__title{
+    text-align: center;
+    background-color: var(--white);
+    color: var(--green);
+    text-transform: uppercase;
+    font-family: var(--f700);
+    font-size: 36px;
+    line-height: 25px;
+    padding: 51px 0 57px;
+}
+
+.footer .tel{
+    font-family: var(--f700);
+    color: var(--number);
+    font-size: 24px;
+    line-height: 21px;
+}
+
+
+
+/* MAIN END */
+/* **************** */
+/* FOOTER START */
+
+.footer{
+    padding: 40px 0 50px;
+}
+
+.footer__menu{
+    margin: 41px 0 ;
+}
+
+.footer__link{
+    margin: 10px 21px 0;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 17px;
+    font-family: var(--f100);
+}
+
+.copyright{
+    line-height: 15px;
+    color: var(--white);
+    font-family: var(--f300);
+    text-align: center;
+}
+
+
+/* FOOTER END */
+/* ***************** */
+/* MEDIA START */ 
+
+@media(max-width: 1140px){
+     .main__product{
+         width: var(--col-6);
+     }
+}
+
+@media(max-width: 782px){
+   .menu__lists{
+       justify-content: center;
+   }
+   .menu__link{
+    margin: 10px;
+   }
+
+   .recipe__txt{
+       text-align: center;
+   }
+}
+
+@media(max-width: 768px){
+    .header-info__btn{
+    line-height: 30px;
+    font-size: 30px;
+    padding: 14px 45px;
+    margin: auto;
+    }
+}
+
+@media(max-width: 750px){
+    .logo{
+        margin-top: 15px;
+    }
+
+    .header__nav{
+       flex-direction: column;
+    }
+
+    .header__title{
+         font-size: 50px;
+    }
+    .header__title, 
+    .header__beef,
+    .header__txt{
+         text-align: center;
+    }
+}
+
+@media(max-width: 650px){
+    .main__product{
+        width: var(--col-12);
+    }
+}
+
+@media(max-width: 580px){
+     .nav__menu{
+         display: none;
+     }
+     .product__price{
+         padding: 10px 25px;
+         font-size: 16px;
+     }
+}
+
+@media(max-width: 400px){
+    .footer__contacts{
+        flex-direction: column;
+    }
+
+    .footer .tel{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 360px){
+    .header__title{
+        margin-top: 10px;
+        font-size: 36px;
+        line-height: 28px;
+    }
+
+    .header__beef{
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .recipe__title{
+       font-size: 20px;
+    }
+}
+
+
+/* MEDIA END */
