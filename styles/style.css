@@ -400,6 +400,12 @@ html{
      }
 }
 
+@media(max-width: 870px){
+    .header__nav{
+        flex-direction: column;
+     }
+}
+
 @media(max-width: 782px){
    .menu__lists{
        justify-content: center;
@@ -411,6 +417,8 @@ html{
    .recipe__txt{
        text-align: center;
    }
+
+   
 }
 
 @media(max-width: 768px){
@@ -426,11 +434,6 @@ html{
     .logo{
         margin-top: 15px;
     }
-
-    .header__nav{
-       flex-direction: column;
-    }
-
     .header__title{
          font-size: 50px;
     }
@@ -441,16 +444,21 @@ html{
     }
 }
 
+@media(max-width: 700px){
+    .nav__menu{
+        display: none;
+    }
+}
+
 @media(max-width: 650px){
     .main__product{
         width: var(--col-12);
     }
+    
 }
 
 @media(max-width: 580px){
-     .nav__menu{
-         display: none;
-     }
+    
      .product__price{
          padding: 10px 25px;
          font-size: 16px;
